@@ -1,4 +1,4 @@
-# INFO698 Capstone - Agent RAG
+- Agent RAG
 
 This repository contains the implementation of a ** RAG (Retrieval-Augmented Generation)** pipeline for PubMedCentral Database.
 
