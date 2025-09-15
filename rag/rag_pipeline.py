@@ -248,7 +248,7 @@ class PubMedRAG:
                 # Process each chunk and yield formatted outputs
                 formatted_outputs = self.process_chunks(chunk)
                 if formatted_outputs:  # Only yield if there's something to yield
-                    yield f"{formatted_outputs}\n\n"
+                    yield  f"{formatted_outputs}\n\n"
 
             # # Check if reached max iterations and summarize
             # collected_info = self.extract_messages_from_agent_result(agent_result)
@@ -268,3 +268,4 @@ class PubMedRAG:
         except Exception as e:
             logger.error(f"Error in RAG query stream: {str(e)}", exc_info=True)
             yield f"Error generating response: {str(e)}"
+            
